@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23C26BFF-3D5A-43F2-8D48-0847FE4325D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BestSellerAutorizaciones</RootNamespace>
+    <AssemblyName>BestSellerAutorizaciones</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon %282%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B1E0BA65732697A0590257ECA30BD4A8398140F1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BestSellerAutorizaciones_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesConfi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccesConfi.Designer.cs">
+      <DependentUpon>AccesConfi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BD gestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BD gestion.Designer.cs">
+      <DependentUpon>BD gestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfCorreo.Designer.cs">
+      <DependentUpon>ConfCorreo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MailAddres.cs" />
+    <Compile Include="Parametros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametros.Designer.cs">
+      <DependentUpon>Parametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VAprovación.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VAprovación.Designer.cs">
+      <DependentUpon>VAprovación.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VConexionBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VConexionBD.Designer.cs">
+      <DependentUpon>VConexionBD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicial.Designer.cs">
+      <DependentUpon>Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funciones.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolicitudAprobacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitudAprobacion.Designer.cs">
+      <DependentUpon>SolicitudAprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VLogin.Designer.cs">
+      <DependentUpon>VLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccesConfi.resx">
+      <DependentUpon>AccesConfi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BD gestion.resx">
+      <DependentUpon>BD gestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfCorreo.resx">
+      <DependentUpon>ConfCorreo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametros.resx">
+      <DependentUpon>Parametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VAprovación.resx">
+      <DependentUpon>VAprovación.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VConexionBD.resx">
+      <DependentUpon>VConexionBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial.resx">
+      <DependentUpon>Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitudAprobacion.resx">
+      <DependentUpon>SolicitudAprobacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VLogin.resx">
+      <DependentUpon>VLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BestSellerAutorizaciones_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\6405909.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\mostrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\muestra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ocultar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon %282%29.ico" />
+    <None Include="Resources\atras.png" />
+    <None Include="Resources\boton-actualizar.png" />
+    <None Include="Resources\soliciAut.png" />
+    <None Include="Resources\AutPendiente.png" />
+    <None Include="Resources\configuraciones.png" />
+    <None Include="Resources\documento.png" />
+    <None Include="Resources\salida.png" />
+    <None Include="Resources\aut.png" />
+    <None Include="Resources\cancelado.png" />
+    <None Include="Resources\pendienteAut.png" />
+    <None Include="Resources\usuario1.png" />
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
