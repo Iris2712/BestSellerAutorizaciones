@@ -343,7 +343,7 @@ namespace BestSellerAutorizaciones
                     funciones.Para = ReaderObtenerDtsDoc["EMAIL"].ToString();
                 }
                 ReaderObtenerDtsDoc.Close();
-                funciones.EscribirLog("info", "Se obtuvo de manera orecta los datos para el envio de correo (Detinatario)", false, 0);
+                funciones.EscribirLog("info", $"Se obtuvo de manera orecta los datos para el envio de correo (Detinatario)({funciones.Para})", false, 0);
             }
             catch (Exception e)
             {

@@ -37,7 +37,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,10 +52,10 @@
     <ApplicationIcon>favicon %282%29.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>B1E0BA65732697A0590257ECA30BD4A8398140F1</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>0008385F1D55F8A8106A5DD2620A28D92F8360E1</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>BestSellerAutorizaciones_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>BestSellerAutorizaciones_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -68,6 +68,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -178,6 +181,7 @@
     <EmbeddedResource Include="VLogin.resx">
       <DependentUpon>VLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BestSellerAutorizaciones_1_TemporaryKey.pfx" />
     <None Include="BestSellerAutorizaciones_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">

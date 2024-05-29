@@ -248,7 +248,6 @@ namespace BestSellerAutorizaciones
             }
             catch (Exception e)
             {
-                
                 EscribirLog("info", $"No es posible conectarse a la Base de Datos. ({e.Message})", true, 1);
                 return false;
             }
